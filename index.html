@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Erik, Sam & Ellis- Phoenix, AZ jazz trio">
+		<meta name="keywords" content="jazz, trio">
+		<meta name="author" content="Erik, Sam & Ellis">
+		<meta name="theme-color" content="#008000">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- Favicon -->
+		
+		<!-- Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;600&display=swap" rel="stylesheet">
+		<!-- Title -->
+		<title>Erik, Sam & Ellis</title>
+	</head>
+	<body onload="load()">
+		<!-- Navbar-->
+		<div class="navbar navbar-home unselectable" id="navbar">
+			<div class="navbar-button" onclick="openMenu();">≡</div>
+			<div class="navbar-link-container">
+				<div class="navbar-link navbar-link-active" onclick="transition(0)">HOME</div>
+				<div class="navbar-link" onclick="transition(1)">ABOUT</div>
+				<div class="navbar-link" onclick="transition(2)">MUSIC</div>
+				<div class="navbar-link" onclick="transition(3)">VIDEO</div>
+				<div class="navbar-link" onclick="transition(4)">CONTACT</div>
+			</div>
+		</div>
+		<!-- Sidebar overlay -->
+		<div class="overlay" id="overlay" onclick="closeMenu();"></div>
+		<!-- Sidebar -->
+		<div class="sidebar unselectable" id="sidebar">
+			<div class="sidebar-link sidebar-link-mobile sidebar-link-active" onclick="closeMenu(); transition(0)">Home</div>
+			<div class="sidebar-link sidebar-link-mobile" onclick="closeMenu(); transition(1)">About</div>
+			<div class="sidebar-link sidebar-link-mobile" onclick="closeMenu(); transition(2)">Music</div>
+			<div class="sidebar-link sidebar-link-mobile" onclick="closeMenu(); transition(3)">Video</div>
+			<div class="sidebar-link sidebar-link-mobile" onclick="closeMenu(); transition(4)">Contact</div>
+		</div>
+		<!-- Home -->
+		<div class="page home-page page-active">
+			<div class="banner home-banner"><div class="name unselectable">ERIK, SAM & ELLIS</div></div>
+		</div>
+		<!-- About -->
+		<div class="page">
+			<div class="panel-container">
+				<div class="panel left-panel about-panel">
+				</div>
+				<div class="panel right-panel">
+					<div class="panel-padding">
+						<div class="page-title">About</div>
+						<div class="page-text">
+							<b>Erik, Sam & Ellis</b>, which comprises guitarist Erik Olson, drummer Sam Russo, and bassist Ellis Green, 
+							is a jazz group from Phoenix, Arizona. The trio has performed in various configurations at several venues around the Valley, 
+							including Wrigley Mansion, the Phoenician, Sky Harbor airport, and the Nash, the premier jazz club in the Phoenix area. 
+							The group performs in both background music and concert settings, and presents music associated with artists including Frank Sinatra and Ella Fitzgerald. 
+							<br><br>
+							Members of the trio have performed with jazz luminaries including Lewis Nash, Bruce Forman, Michael Kocour, and Jason Palmer.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Music -->
+		<div class="page">
+			<div class="page-content">
+				<div class="page-entry">
+					<img class="page-image" src="img/cover_front.png">
+				</div>
+				<div class="page-entry">
+					<div class="page-title">Tune Time</div>
+					<div class="page-text">
+						<b>Coming soon!</b>
+						<br><br>
+						<b>Track list</b>:<br>
+						1.&nbsp;The Surrey with the Fringe on Top<br>&nbsp;&nbsp;&nbsp;&nbsp;(Richard Rodgers, Oscar Hammerstein II)<br>
+						2.&nbsp;They Can't Take That Away from Me<br>&nbsp;&nbsp;&nbsp;&nbsp;(George and Ira Gershwin)<br>
+						3.&nbsp;Stardust<br>&nbsp;&nbsp;&nbsp;&nbsp;(Hoagy Carmichael, Mitchell Parish)<br>
+						4.&nbsp;Soft Winds<br>&nbsp;&nbsp;&nbsp;&nbsp;(Fletcher Henderson)<br>
+						5.&nbsp;Flamingo<br>&nbsp;&nbsp;&nbsp;&nbsp;(Ted Grouya, Edmund Anderson)<br>
+						6.&nbsp;How About You?<br>&nbsp;&nbsp;&nbsp;&nbsp;(Burton Lane, Ralph Freed)<br>
+						7.&nbsp;Witchcraft<br>&nbsp;&nbsp;&nbsp;&nbsp;(Cy Coleman, Carolyn Leigh)<br>
+						8.&nbsp;You Make Me Feel so Young<br>&nbsp;&nbsp;&nbsp;&nbsp;(Josef Myrow, Mack Gordon)<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Video -->
+		<div class="page">
+			<div class="page-content">
+				<div class="video-entry">
+					<div class="video-container">
+						<iframe 
+							class="video"
+							src="https://www.youtube.com/embed/4h_ME_INNvw"
+							title="Erik, Sam & Ellis- They Can't Take That Away From Me" 
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
+					</div>
+				</div>		
+				<div class="video-entry">
+					<div class="video-container">
+						<iframe 
+							class="video"
+							src="https://www.youtube.com/embed/OsZMf9tzatE"
+							title="Erik, Sam & Ellis- Focus" 
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Contact -->
+		<div class="page">
+			<div class="page-content">
+				<div class="page-entry">
+					<div class="small-text"><b>PHONE</b></div>
+					<div class="contact-text">
+						<a onclick="navigator.clipboard.writeText('6027700329');">(602)&nbsp;770&#8209;0329</a>
+					</div>
+				</div>
+				<div class="page-entry">
+					<div class="small-text"><b>EMAIL</b> <span class="grey-text">(PREFERRED)</span></div>
+					<div class="contact-text">
+						<a onclick="navigator.clipboard.writeText('eriksamandellis@gmail.com');">eriksamandellis@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loading-screen">
+			<div id="loading-icon"></div>
+		</div>
+		<script type="text/javascript" src="scripts/menu.js"></script>
+		<script type="text/javascript" src="scripts/transition.js"></script>
+		<script type="text/javascript" src="scripts/load.js"></script>
+	</body>	
+</html>
