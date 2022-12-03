@@ -3,5 +3,6 @@ function load() {
 	loadingScreen.style.opacity = "0";
 	setTimeout(() => {
 		loadingScreen.style.display = "none";
+		animateName();
 	}, 400); 
 }

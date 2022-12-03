@@ -4,24 +4,33 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Erik, Sam & Ellis- Phoenix, AZ jazz trio">
-		<meta name="keywords" content="jazz, trio">
+		<meta name="keywords" content="jazz, trio, phoenix, arizona, az, erik olson, sam russo, ellis green">
 		<meta name="author" content="Erik, Sam & Ellis">
-		<meta name="theme-color" content="#008000">
+		<meta name="theme-color" content="#f2f2f2">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<!-- Favicon -->
-		
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#2a286b">
+		<link rel="shortcut icon" href="favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2a286b">
+		<meta name="msapplication-config" content="favicon/browserconfig.xml">
 		<!-- Fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+		<!-- Font Awesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Title -->
 		<title>Erik, Sam & Ellis</title>
 	</head>
-	<body onload="load()">
+	<body onload="load();">
 		<!-- Navbar-->
-		<div class="navbar navbar-home unselectable" id="navbar">
+		<div class="navbar navbar-banner unselectable" id="navbar">
 			<div class="navbar-button" onclick="openMenu();">≡</div>
 			<div class="navbar-link-container">
 				<div class="navbar-link navbar-link-active" onclick="transition(0)">HOME</div>
@@ -43,10 +52,16 @@
 		</div>
 		<!-- Home -->
 		<div class="page home-page page-active">
-			<div class="banner home-banner"><div class="name unselectable">ERIK, SAM & ELLIS</div></div>
+			<div class="banner home-banner">
+				<div class="name-container unselectable">
+					<div class="name">ERIK<span style="font-family: 'DM Serif Display', serif;">,</span></div>
+					<div class="name">SAM &</div>
+					<div class="name">ELLIS</div>
+				</div>
+			</div>
 		</div>
 		<!-- About -->
-		<div class="page">
+		<div class="page page-slide-from-right">
 			<div class="panel-container">
 				<div class="panel left-panel about-panel">
 				</div>
@@ -66,31 +81,87 @@
 			</div>
 		</div>
 		<!-- Music -->
-		<div class="page">
-			<div class="page-content">
-				<div class="page-entry">
-					<img class="page-image" src="img/cover_front.png">
-				</div>
-				<div class="page-entry">
-					<div class="page-title">Tune Time</div>
-					<div class="page-text">
-						<b>Coming soon!</b>
-						<br><br>
-						<b>Track list</b>:<br>
-						1.&nbsp;The Surrey with the Fringe on Top<br>&nbsp;&nbsp;&nbsp;&nbsp;(Richard Rodgers, Oscar Hammerstein II)<br>
-						2.&nbsp;They Can't Take That Away from Me<br>&nbsp;&nbsp;&nbsp;&nbsp;(George and Ira Gershwin)<br>
-						3.&nbsp;Stardust<br>&nbsp;&nbsp;&nbsp;&nbsp;(Hoagy Carmichael, Mitchell Parish)<br>
-						4.&nbsp;Soft Winds<br>&nbsp;&nbsp;&nbsp;&nbsp;(Fletcher Henderson)<br>
-						5.&nbsp;Flamingo<br>&nbsp;&nbsp;&nbsp;&nbsp;(Ted Grouya, Edmund Anderson)<br>
-						6.&nbsp;How About You?<br>&nbsp;&nbsp;&nbsp;&nbsp;(Burton Lane, Ralph Freed)<br>
-						7.&nbsp;Witchcraft<br>&nbsp;&nbsp;&nbsp;&nbsp;(Cy Coleman, Carolyn Leigh)<br>
-						8.&nbsp;You Make Me Feel so Young<br>&nbsp;&nbsp;&nbsp;&nbsp;(Josef Myrow, Mack Gordon)<br>
+		<div class="page page-slide-from-right">
+			<div class="banner clocks-banner">
+				<div class="page-content">
+					<div class="page-entry">
+						<img class="page-image" src="img/cover_front.png" />
+					</div>
+					<div class="page-entry">
+						<div class="page-title page-title-banner">Tune Time</div>
+						<div class="page-text">
+							<b>Coming December 9, 2022</b>
+							<div class="unselectable" style="opacity: .5; pointer-events: none;">
+							Download:
+							<br>
+							<table>
+								<tr>
+									<td><div class="fa fa-bandcamp"></div></td>
+									<td><a href="https://theprosrealestateteam.com/wp-content/uploads/2015/11/coming-soon-campaign.png" target="_blank">Bandcamp</a></td>
+								</tr>
+							</table>
+							<br>
+							Listen now:
+							<br>
+							<table>
+								<tr>
+									<td><div class="fa fa-spotify"></div></td>
+									<td><a href="https://theprosrealestateteam.com/wp-content/uploads/2015/11/coming-soon-campaign.png" target="_blank">Spotify</a></td>
+								</tr>
+								<tr>
+									<td><div class="fa fa-apple"></div></td>
+									<td><a href="https://theprosrealestateteam.com/wp-content/uploads/2015/11/coming-soon-campaign.png" target="_blank">Apple Music</a></td>
+								</tr>
+								<tr>
+									<td><div class="fa fa-youtube"></div></td>
+									<td><a href="https://theprosrealestateteam.com/wp-content/uploads/2015/11/coming-soon-campaign.png" target="_blank">Youtube</a></td>
+								</tr>
+							</table>
+							</div>
+							<br>
+							Track list:
+							<br>
+							<table class="tracklist-table">
+								<tr>
+									<td><span class="tracklist-number">1.</span></td>
+									<td><span class="tracklist-title">The Surrey with the Fringe on Top</span><br><span class="tracklist-credits">(Richard Rodgers, Oscar Hammerstein II)</span></td>
+								</tr>
+								<tr>
+									<td><span class="tracklist-number">2.</span></td>
+									<td><span class="tracklist-title">They Can't Take That Away from Me</span><br><span class="tracklist-credits">(George and Ira Gershwin)</span></td>
+								</tr>
+								<tr>
+									<td><span class="tracklist-number">3.</span></td>
+									<td><span class="tracklist-title">Stardust</span><br><span class="tracklist-credits">(Hoagy Carmichael, Mitchell Parish)</span></td>
+								</tr>
+								<tr>
+									<td><span class="tracklist-number">4.</span></td>
+									<td><span class="tracklist-title">Soft Winds</span><br><span class="tracklist-credits">(Fletcher Henderson)</span></td>
+								</tr>
+								<tr>
+									<td><span class="tracklist-number">5.</span></td>
+									<td><span class="tracklist-title">Flamingo</span><br><span class="tracklist-credits">(Ted Grouya, Edmund Anderson)</span></td>
+								</tr>
+								<tr>
+									<td><span class="tracklist-number">6.</span></td>
+									<td><span class="tracklist-title">How About You?</span><br><span class="tracklist-credits">(Burton Lane, Ralph Freed)</span></td>
+								</tr>
+								<tr>
+									<td><span class="tracklist-number">7.</span></td>
+									<td><span class="tracklist-title">Witchcraft</span><br><span class="tracklist-credits">(Cy Coleman, Carolyn Leigh)</span></td>
+								</tr>
+								<tr>
+									<td><span class="tracklist-number">8.</span></td>
+									<td><span class="tracklist-title">You Make Me Feel so Young</span><br><span class="tracklist-credits">(Josef Myrow, Mack Gordon)</span></td>
+								</tr>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Video -->
-		<div class="page">
+		<div class="page page-slide-from-right">
 			<div class="page-content">
 				<div class="video-entry">
 					<div class="video-container">
@@ -119,27 +190,32 @@
 			</div>
 		</div>
 		<!-- Contact -->
-		<div class="page">
+		<div class="page page-slide-from-right">
 			<div class="page-content">
 				<div class="page-entry">
-					<div class="small-text"><b>PHONE</b></div>
-					<div class="contact-text">
-						<a onclick="navigator.clipboard.writeText('6027700329');">(602)&nbsp;770&#8209;0329</a>
-					</div>
-				</div>
-				<div class="page-entry">
-					<div class="small-text"><b>EMAIL</b> <span class="grey-text">(PREFERRED)</span></div>
-					<div class="contact-text">
-						<a onclick="navigator.clipboard.writeText('eriksamandellis@gmail.com');">eriksamandellis@gmail.com</a>
+					<div class="small-text"><b>EMAIL</b></div>
+					<div class="contact-text" tabindex="1">
+						<a onclick="navigator.clipboard.writeText('erikolsontrio@gmail.com');">erikolsontrio@gmail.com</a>
+						<div class="contact-tooltip"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="loading-screen">
-			<div id="loading-icon"></div>
+		<div class="loading-screen" id="loading-screen">
+			<div class="loading-letter-container" style="transform: rotate(-27deg)"><div class="loading-letter" style="animation-delay: -2.5s">L</div></div>
+			<div class="loading-letter-container" style="transform: rotate(-21deg)"><div class="loading-letter" style="animation-delay: -2.6s">O</div></div>
+			<div class="loading-letter-container" style="transform: rotate(-15deg)"><div class="loading-letter" style="animation-delay: -2.7s">A</div></div>
+			<div class="loading-letter-container" style="transform: rotate(-09deg)"><div class="loading-letter" style="animation-delay: -2.8s">D</div></div>
+			<div class="loading-letter-container" style="transform: rotate(-03deg)"><div class="loading-letter" style="animation-delay: -2.9s">I</div></div>
+			<div class="loading-letter-container" style="transform: rotate(003deg)"><div class="loading-letter" style="animation-delay: -3.0s">N</div></div>
+			<div class="loading-letter-container" style="transform: rotate(009deg)"><div class="loading-letter" style="animation-delay: -3.1s">G</div></div>
+			<div class="loading-letter-container" style="transform: rotate(015deg)"><div class="loading-letter" style="animation-delay: -3.2s">.</div></div>
+			<div class="loading-letter-container" style="transform: rotate(021deg)"><div class="loading-letter" style="animation-delay: -3.3s">.</div></div>
+			<div class="loading-letter-container" style="transform: rotate(028deg)"><div class="loading-letter" style="animation-delay: -3.4s">.</div></div>
 		</div>
 		<script type="text/javascript" src="scripts/menu.js"></script>
 		<script type="text/javascript" src="scripts/transition.js"></script>
+		<script type="text/javascript" src="scripts/animateName.js"></script>
 		<script type="text/javascript" src="scripts/load.js"></script>
 	</body>	
 </html>

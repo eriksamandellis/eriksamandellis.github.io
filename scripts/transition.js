@@ -16,18 +16,28 @@ function transition(index) {
 			navbarLinks[i].classList.remove("navbar-link-active");
 			sidebarLinks[i].classList.remove("sidebar-link-active");
 		}
-		if(index === 0) {
-			navbar.classList.add("navbar-home");
+		if(index === 0 || index === 2) {
+			navbar.classList.add("navbar-banner");
 		} else {
-			navbar.classList.remove("navbar-home");
+			navbar.classList.remove("navbar-banner");
 		}
 	}
-	
-	pages[current].classList.remove("page-active");
 	pages[index].classList.add("page-active");
+	pages[index].classList.remove("page-slide-from-left");
+	pages[index].classList.remove("page-slide-from-right");
+	for(let i = 0; i < index; i++) {
+		pages[i].classList.remove("page-active");
+		pages[i].classList.remove("page-slide-from-left");
+		pages[i].classList.add("page-slide-from-left");
+	}
+	for(let i = index + 1; i < pages.length; i++) {
+		pages[i].classList.remove("page-active");
+		pages[i].classList.remove("page-slide-from-right");
+		pages[i].classList.add("page-slide-from-right");
+	}
 	semaphore = true;
 	setTimeout(() => {
 		current = index;
 		semaphore = false;
-	}, 400);
+	}, 600); //400
 }
