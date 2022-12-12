@@ -27,12 +27,12 @@ function transition(index) {
 	pages[index].classList.remove("page-slide-from-right");
 	for(let i = 0; i < index; i++) {
 		pages[i].classList.remove("page-active");
-		pages[i].classList.remove("page-slide-from-left");
+		pages[i].classList.remove("page-slide-from-right");
 		pages[i].classList.add("page-slide-from-left");
 	}
 	for(let i = index + 1; i < pages.length; i++) {
 		pages[i].classList.remove("page-active");
-		pages[i].classList.remove("page-slide-from-right");
+		pages[i].classList.remove("page-slide-from-left");
 		pages[i].classList.add("page-slide-from-right");
 	}
 	semaphore = true;
